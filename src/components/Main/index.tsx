@@ -4,7 +4,12 @@ import React from 'react';
    Container,
    Header,
    BackIcon,
-   ProfileInfo
+   ProfileInfo,
+    BottomMenu,
+    HomeIcon,
+    SearchIcon,
+    BellIcon,
+    EmailIcon,
   } from './styles';
 
 const Main: React.FC = () => {
@@ -21,13 +26,12 @@ const Main: React.FC = () => {
         </ProfileInfo>
       </Header>
 
-      {/* <ProfilePAge/> */}
-      {/* <BottomMenu>
-        <HomeIcon/>
-        <SearchIcon/>
-        <BellIcon/>
-        <EmailIcon/>
-      </BottomMenu> */}
+        <BottomMenu>
+              <HomeIcon className="active"/>
+              <SearchIcon/>
+              <BellIcon/>
+              <EmailIcon/>
+        </BottomMenu>
     </Container>
   );
 };
